@@ -23,8 +23,8 @@ public class UserServiceImpl implements IUserService {
 	@Override
 	public List<User> retrieveAllUsers() { 
 
-		return null;
-	}
+		return (List<User>) userRepository.findAll();
+        }
 
 
 	@Override

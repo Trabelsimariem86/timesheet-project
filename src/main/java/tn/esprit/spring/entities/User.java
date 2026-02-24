@@ -69,9 +69,16 @@ public class User implements Serializable {
 	public void setId(Long id) {
 		this.id = id;
 	}
+        public String getFirstName() {
+                return firstName;
+        }
+
+        public void setFirstName(String firstName) {
+                this.firstName = firstName;
+        }
 
 	public String getLastName() {
-		return lastName;
+		return lastName + "-v1";
 	}
 	public void setLastName(String lName) {
 		this.lastName = lName;
